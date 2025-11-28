@@ -2,8 +2,11 @@ name: GitHub Stats
 
 on:
   schedule:
-    - cron: '0 3 * * *'   # se ejecuta todos los días a las 03:00 UTC
-  workflow_dispatch:       # te permite lanzarlo a mano desde Actions
+    - cron: '0 3 * * *'   # diario a las 03:00 UTC
+  workflow_dispatch:       # lanzarlo a mano desde Actions
+
+permissions:
+  contents: write          # permitir que el workflow haga commit del SVG
 
 jobs:
   stats:
@@ -15,7 +18,7 @@ jobs:
       - name: Generate the user stats image
         uses: cicirello/user-statistician@v1
         with:
-          colors: dark-dimmed          # tema oscuro tipo GitHub
+          colors: dark-dimmed
           custom-title: "GitHub stats de MILLERMARRU"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
