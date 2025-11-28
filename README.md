@@ -9,35 +9,36 @@
 
 ## 👨‍💻 Sobre mí
 
-- 🚀 Construyo aplicaciones web con **TypeScript**, **React/Next.js** y **Node.js**  
-- 🧠 Experimento con **IA/ML**: perceptrón, RNN, CNN, reconocimiento facial y OCR  
-- ☕ Trabajo también con **Java + Spring** y proyectos académicos de microservicios  
+- 🚀 Construyo aplicaciones web con **TypeScript**, **React/Next.js** y **Node.js**
+- 🧠 Experimento con **IA/ML**: perceptrón, RNN, CNN, reconocimiento facial y OCR
+- ☕ Desarrollo proyectos con **Java + Spring** y microservicios
 - 📚 Siempre creando repos de práctica para seguir mejorando
 
 ---
 
-## 🛠️ Tech Stack
+## 🧩 Tecnologías conocidas 👨🏻‍💻
 
-**Lenguajes:**  
-🟦 TypeScript · 💛 JavaScript · 🐍 Python · ☕ Java  
+<!-- Tech stack icons -->
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,js,py,java,react,nextjs,tailwind,nodejs,nestjs,postman&perline=10" />
+  </a>
+</p>
 
-**Frontend:**  
-⚛️ React · ▲ Next.js · 🎨 Tailwind CSS  
-
-**Backend & Datos:**  
-🟩 Node.js · 🌿 NestJS · ☕ Spring Boot · 🐘 PostgreSQL · 💾 SQLite/MySQL  
-
-**Otros:**  
-🐧 Linux · 🧪 Jupyter Notebook · 🧰 Git & GitHub  
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,git,github,linux,vscode,idea,bash,stackoverflow&perline=10" />
+  </a>
+</p>
 
 ---
 
 ## 🚀 Proyectos destacados
 
-- 🔹 [projectia](https://github.com/MILLERMARRU/projectia): base para apps en **Next.js + TypeScript**  
-- 🔹 [simulador-perceptron](https://github.com/MILLERMARRU/simulador-perceptron): interfaz en Next.js para entender el **perceptrón**  
-- 🔹 [project_ia_face](https://github.com/MILLERMARRU/project_ia_face): pruebas de **reconocimiento facial** en Python  
-- 🔹 [paddle_ocr](https://github.com/MILLERMARRU/paddle_ocr): experimentos de **OCR** con PaddleOCR  
+- 🔹 [projectia](https://github.com/MILLERMARRU/projectia) – Base para apps en **Next.js + TypeScript**
+- 🔹 [simulador-perceptron](https://github.com/MILLERMARRU/simulador-perceptron) – Simulador de **perceptrón** en Next.js
+- 🔹 [project_ia_face](https://github.com/MILLERMARRU/project_ia_face) – Pruebas de **reconocimiento facial** en Python
+- 🔹 [paddle_ocr](https://github.com/MILLERMARRU/paddle_ocr) – Experimentos de **OCR** con PaddleOCR
 
 ---
 
