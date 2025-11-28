@@ -44,7 +44,11 @@
 
 ## 📊 Estadísticas de GitHub
 
-[![Mis estadísticas](images/userstats.svg)](https://github.com/cicirello/user-statistician)
+<p align="center">
+  <a href="https://github.com/cicirello/user-statistician">
+    <img src="images/userstats.svg" alt="Mis estadísticas" />
+  </a>
+</p>
 
 ---
 
