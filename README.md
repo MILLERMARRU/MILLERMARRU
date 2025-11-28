@@ -45,10 +45,21 @@
 ## 📈 Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MILLERMARRU&show_icons=true&theme=tokyonight" alt="stats" />
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img 
+      src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=MILLERMARRU&show_icons=true&theme=tokyonight"
+      alt="GitHub Stats"
+    />
+  </a>
 </p>
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MILLERMARRU&layout=compact&theme=tokyonight" alt="top langs" />
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img 
+      src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=MILLERMARRU&layout=compact&theme=tokyonight"
+      alt="Top Langs"
+    />
+  </a>
 </p>
 
 ---
