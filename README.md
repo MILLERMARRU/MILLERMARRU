@@ -42,25 +42,9 @@
 
 ---
 
-## 📈 Stats
+## 📊 Estadísticas de GitHub
 
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img 
-      src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=MILLERMARRU&show_icons=true&theme=tokyonight"
-      alt="GitHub Stats"
-    />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img 
-      src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=MILLERMARRU&layout=compact&theme=tokyonight"
-      alt="Top Langs"
-    />
-  </a>
-</p>
+[![Mis estadísticas](images/userstats.svg)](https://github.com/cicirello/user-statistician)
 
 ---
 
