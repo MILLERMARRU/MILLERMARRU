@@ -21,13 +21,13 @@
 <!-- Tech stack icons -->
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,py,java,react,nextjs,tailwind,nodejs,nestjs,postman&perline=10" />
+    <img src="https://skillicons.dev/icons?i=ts,js,py,java,react,nextjs,tailwind,nodejs,nestjs,postman,prisma&perline=10" />
   </a>
 </p>
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,git,github,linux,vscode,idea,bash,stackoverflow&perline=10" />
+    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,git,github,docker,linux,vscode,idea,bash,stackoverflow&perline=10" />
   </a>
 </p>
 
