@@ -42,16 +42,6 @@
 
 ---
 
-## 📊 Estadísticas de GitHub
-
-<p align="center">
-  <a href="https://github.com/cicirello/user-statistician">
-    <img src="images/userstats.svg" alt="Mis estadísticas" />
-  </a>
-</p>
-
----
-
 <p align="center">
   ✉️ ¿Colaboramos? Abre un issue, haz un fork o mándame un PR 😄
 </p>
