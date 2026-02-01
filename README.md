@@ -27,7 +27,7 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb,firebase,git,github,heroku,docker,linux,vscode,webstorm,cloudflare,astro,django,python,kafka,idea,maven,nestjs,flask,spring,graphql,bash,vercel,prisma,supabase,anaconda,androidstudio,stackoverflow&perline=15" />
+    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb,firebase,git,github,heroku,docker,linux,vscode,webstorm,cloudflare,astro,django,python,kafka,idea,maven,tensorflow,flask,pytorch,graphql,bash,vercel,prisma,supabase,anaconda,androidstudio,stackoverflow&perline=15" />
   </a>
 </p>
 
