@@ -21,13 +21,13 @@
 <!-- Tech stack icons -->
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,py,java,react,nextjs,tailwind,nodejs,npm,nestjs,deno,bun,express,redux,html,csspostman,jwt,vite,redux,figma,nginx&perline=15" />
+    <img src="https://skillicons.dev/icons?i=ts,js,py,java,idea,php,react,nextjs,tailwind,nodejs,angular,bootstrap,npm,nestjs,deno,bun,express,laravel,redux,html,css,postman,obsidian,vite,fastapi,spring,figma,nginx,powershell,sklearn&perline=15" />
   </a>
 </p>
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb,firebase,git,github,docker,linux,vscode,cloudflare,swagger,slack,jira,kafka,idea,maven,nestjs,spring,graphql,bash,vercel,prisma,supabase,stackoverflow&perline=15" />
+    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb,firebase,git,github,heroku,docker,linux,vscode,webstorm,cloudflare,astro,django,python,kafka,idea,maven,nestjs,flask,spring,graphql,bash,vercel,prisma,supabase,anaconda,androidstudio,stackoverflow&perline=15" />
   </a>
 </p>
 
