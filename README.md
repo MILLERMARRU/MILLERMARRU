@@ -35,10 +35,10 @@
 
 ## 🚀 Proyectos destacados
 
-- 🔹 [projectia](https://github.com/MILLERMARRU/projectia) – Base para apps en **Next.js + TypeScript**
-- 🔹 [simulador-perceptron](https://github.com/MILLERMARRU/simulador-perceptron) – Simulador de **perceptrón** en Next.js
-- 🔹 [project_ia_face](https://github.com/MILLERMARRU/project_ia_face) – Pruebas de **reconocimiento facial** en Python
-- 🔹 [paddle_ocr](https://github.com/MILLERMARRU/paddle_ocr) – Experimentos de **OCR** con PaddleOCR
+🔹 [projectia](https://github.com/MILLERMARRU/projectia) – Base para apps en **Next.js + TypeScript**
+🔹 [simulador-perceptron](https://github.com/MILLERMARRU/simulador-perceptron) – Simulador de **perceptrón** en Next.js
+🔹 [project_ia_face](https://github.com/MILLERMARRU/project_ia_face) – Pruebas de **reconocimiento facial** en Python
+🔹 [paddle_ocr](https://github.com/MILLERMARRU/paddle_ocr) – Experimentos de **OCR** con PaddleOCR
 
 ---
 
