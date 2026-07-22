@@ -49,15 +49,7 @@
 
 <div align="center">
 
-<a href="https://dochubs.vercel.app"><img width="90%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dochubs-hero.svg" /></a>
-
-<br/>
-
-<img src="https://img.shields.io/github/stars/MILLERMARRU/team_doc?style=flat-square&color=FACC15&label=stars" />
-<a href="https://github.com/MILLERMARRU/team_doc"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
-
-<br/><br/>
-
+<a href="https://dochubs.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dochubs.svg" /></a>
 <a href="https://truquivam.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/truquevam.svg" /></a>
 <a href="https://house3d-umber.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dreamhouses.svg" /></a>
 <a href="https://alenor-store.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/alenor.svg" /></a>
