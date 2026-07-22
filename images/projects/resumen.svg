@@ -1,0 +1,14 @@
+<svg width="760" height="110" viewBox="0 0 760 110" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="759" height="109" rx="14" fill="#0d1117" stroke="#30363d"/>
+<line x1="190" y1="26" x2="190" y2="84" stroke="#30363d" stroke-width="1"/>
+<line x1="380" y1="26" x2="380" y2="84" stroke="#30363d" stroke-width="1"/>
+<line x1="570" y1="26" x2="570" y2="84" stroke="#30363d" stroke-width="1"/>
+<text x="95" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#38BDF8">117</text>
+<text x="95" y="78" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.3">Repos</text>
+<text x="285" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#34D399">4.4k+</text>
+<text x="285" y="78" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.3">Commits</text>
+<text x="475" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#F59E0B">7</text>
+<text x="475" y="78" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.3">En producción</text>
+<text x="665" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#A78BFA">3+</text>
+<text x="665" y="78" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.3">Años activo</text>
+</svg>
