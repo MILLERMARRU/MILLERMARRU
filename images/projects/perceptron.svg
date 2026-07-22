@@ -1,12 +1,8 @@
-<svg width="380" height="300" viewBox="0 0 380 300" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<clipPath id="round5"><rect x="0" y="0" width="380" height="300" rx="14"/></clipPath>
-</defs>
-<g clip-path="url(#round5)">
-<image href="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/screenshots/perceptron.jpg" x="0" y="0" width="380" height="170" preserveAspectRatio="xMidYMid slice"/>
-<rect x="0" y="170" width="380" height="130" fill="#0d1117"/>
-<circle cx="34" cy="206" r="16" fill="#8B5CF633"/>
-<g transform="translate(22,194)" color="#8B5CF6">
+<svg width="380" height="136" viewBox="0 0 380 136" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="379" height="135" rx="14" fill="#0d1117" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="136" rx="3" fill="#8B5CF6"/>
+<circle cx="34" cy="34" r="16" fill="#8B5CF633"/>
+<g transform="translate(22,22)" color="#8B5CF6">
 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18V5m3 8a4.17 4.17 0 0 1-3-4a4.17 4.17 0 0 1-3 4m8.598-6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/>
 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/>
 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 18a4 4 0 0 0 2-7.464"/>
@@ -14,10 +10,8 @@
 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18a4 4 0 0 1-2-7.464"/>
 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/>
 </g>
-<text x="60" y="213" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Simulador Perceptrón</text>
-<text x="24" y="241" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">Simulador interactivo de un perceptrón</text>
-<text x="24" y="259" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">(red neuronal) construido en Next.js.</text>
-<text x="24" y="289" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#8B5CF6">Ver demo →</text>
-</g>
-<rect x="0.5" y="0.5" width="379" height="299" rx="14" fill="none" stroke="#30363d"/>
+<text x="60" y="41" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Simulador Perceptrón</text>
+<text x="24" y="70" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">Simulador interactivo de un perceptrón</text>
+<text x="24" y="88" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">(red neuronal) construido en Next.js.</text>
+<text x="24" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#8B5CF6">Ver demo →</text>
 </svg>
