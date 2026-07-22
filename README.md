@@ -1,13 +1,14 @@
 <div align="center">
 
-# Hola, soy Miller Zamora — <code>MILLERMARRU</code>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,100:8B5CF6&height=180&section=header&text=Miller%20Zamora&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Full%20Stack%20%2B%20IA%20aplicada%20%C2%B7%20Freelance&descAlignY=62&descSize=18&fontAlignY=35" />
 
-### Full Stack Developer & IA · Perú
+<code>MILLERMARRU</code> · Perú
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=Full+Stack+%7C+TypeScript+%2F+React+%2F+Next.js;IA+%2F+ML%3A+CNN%2C+RNN%2C+Reconocimiento+facial%2C+OCR;Java+%2B+Spring+%7C+Microservicios+%26+APIs;Siempre+construyendo+algo+nuevo" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=680&lines=De+simuladores+de+redes+neuronales+a+SaaS+en+producci%C3%B3n;TypeScript+%2F+React+%2F+Next.js+%2F+Node.js;IA+%2F+ML%3A+CNN%2C+RNN%2C+Reconocimiento+facial%2C+OCR;Java+%2B+Spring+%7C+Microservicios+%26+APIs" alt="Typing SVG" />
 </a>
 
+<img src="https://img.shields.io/badge/Disponible-Freelance-34D399?style=for-the-badge" />
 <a href="https://www.linkedin.com/in/millerzamora/"><img src="https://img.shields.io/badge/LinkedIn-millerzamora-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:millermarru4@gmail.com"><img src="https://img.shields.io/badge/Email-millermarru4%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://millermarru.dev"><img src="https://img.shields.io/badge/Portfolio-millermarru.dev-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
@@ -57,15 +58,11 @@
 
 <br />
 
-## <img width="22" valign="middle" src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23FB7185" /> Estadísticas de GitHub
-
-<div align="center">
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MILLERMARRU&theme=tokyonight" />
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MILLERMARRU&theme=tokyonight" />
-</div>
+## <img width="22" valign="middle" src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23FB7185" /> Actividad
 
 <div align="center">
   <img src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true" />
+  <img src="https://img.shields.io/github/followers/MILLERMARRU?style=for-the-badge&label=Followers&color=38BDF8" />
 </div>
 
 <br />
