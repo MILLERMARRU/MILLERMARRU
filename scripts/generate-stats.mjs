@@ -159,7 +159,7 @@ function buildTopLangsSvg(langCounts) {
   const trackWidth = 190;
   const rowHeight = 28;
   const startY = 60;
-  const height = startY + (top.length - 1) * rowHeight + 34;
+  const height = startY + (top.length - 1) * rowHeight + 23; // igual a la altura del streak-stats (195px con 5 lenguajes)
 
   const rows = top
     .map(([lang, count], i) => {
