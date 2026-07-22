@@ -19,6 +19,7 @@
 
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/user-round.svg?color=%232DD4BF" /> Sobre mí
 
+- <img width="16" valign="middle" src="https://api.iconify.design/lucide/telescope.svg?color=%2338BDF8" /> Actualmente construyendo **DocHubs**, una plataforma de documentación colaborativa para developers
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/rocket.svg?color=%23FB923C" /> Construyo aplicaciones web full stack con **TypeScript**, **React/Next.js** y **Node.js**
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/brain.svg?color=%238B5CF6" /> Experimento con **IA/ML**: perceptrón, RNN, CNN, reconocimiento facial y OCR - 13 repos en **Python** (8 scripts + 5 notebooks)
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/coffee.svg?color=%23D97706" /> Desarrollo proyectos con **Java + Spring** y arquitecturas de microservicios
@@ -48,7 +49,15 @@
 
 <div align="center">
 
-<a href="https://dochubs.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dochubs.svg" /></a>
+<a href="https://dochubs.vercel.app"><img width="90%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dochubs-hero.svg" /></a>
+
+<br/>
+
+<img src="https://img.shields.io/github/stars/MILLERMARRU/team_doc?style=flat-square&color=FACC15&label=stars" />
+<a href="https://github.com/MILLERMARRU/team_doc"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
+
+<br/><br/>
+
 <a href="https://truquivam.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/truquevam.svg" /></a>
 <a href="https://house3d-umber.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dreamhouses.svg" /></a>
 <a href="https://alenor-store.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/alenor.svg" /></a>
@@ -80,9 +89,13 @@
 
 <div align="center">
 
-### <img width="20" valign="middle" src="https://api.iconify.design/lucide/mail.svg?color=%2334D399" /> ¿Colaboramos?
+### <img width="20" valign="middle" src="https://api.iconify.design/lucide/mail.svg?color=%2334D399" /> ¿Tienes un proyecto en mente?
 
-Abre un issue, haz un fork o mándame un PR
+Trabajo como freelance en desarrollo full stack e IA aplicada - escríbeme y conversemos.
+
+<a href="mailto:millermarru4@gmail.com"><img src="https://img.shields.io/badge/Escribeme-millermarru4%40gmail.com-34D399?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+
+<br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=MILLERMARRU&color=38BDF8&style=flat-square&label=Visitas+al+perfil" />
 
