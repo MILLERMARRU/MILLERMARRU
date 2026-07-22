@@ -174,7 +174,6 @@ function buildTopLangsSvg(langCounts) {
     .join("\n");
 
   return `<svg width="380" height="${height}" viewBox="0 0 380 ${height}" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="379" height="${height - 1}" rx="14" fill="#0d1117" stroke="#30363d"/>
 <text x="20" y="30" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#9ca3af" letter-spacing="0.4">TOP LANGUAGES · POR REPOS</text>
 ${rows}
 </svg>
