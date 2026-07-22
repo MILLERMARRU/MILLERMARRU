@@ -48,23 +48,24 @@
 | Proyecto | Descripción | Demo |
 |---|---|---|
 | 📚 **[DocHubs](https://github.com/MILLERMARRU/team_doc)** ⭐ 16 | Plataforma de documentación colaborativa para developers, construida con Next.js y GitHub como storage | [dochubs.vercel.app](https://dochubs.vercel.app) |
-| 📅 **[CitaPe](https://github.com/MILLERMARRU/CitaPe)** | SaaS de agenda digital con recordatorios automáticos por WhatsApp para negocios de servicios | [cita-pe.vercel.app](https://cita-pe.vercel.app) |
+| 🔄 **[TruqueVAM](https://github.com/MILLERMARRU/TruquiVAM-)** | Plataforma de trueque comunitario — permite publicar objetos e intercambiarlos sin dinero | [truquivam.vercel.app](https://truquivam.vercel.app) |
+| 🏡 **[Dream Houses](https://github.com/MILLERMARRU/house3d)** | Sitio para una constructora de casas sostenibles: portafolio de proyectos, fotografía arquitectónica y planos | [house3d-umber.vercel.app](https://house3d-umber.vercel.app) |
+| 🧼 **[Alenor](https://github.com/MILLERMARRU/alenor.store)** | E-commerce de jabones artesanales naturales, con catálogo y envíos a nivel nacional | [alenor-store.vercel.app](https://alenor-store.vercel.app) |
+| 🧸 **[Buzz Lightyear 3D](https://github.com/MILLERMARRU/buzz-buzz)** | Experiencia interactiva en 3D — exploración e interacción visual con el personaje en el navegador | [buzz-buzz-two.vercel.app](https://buzz-buzz-two.vercel.app) |
 | 🧠 **[simulador-perceptron](https://github.com/MILLERMARRU/simulador-perceptron)** | Simulador interactivo de un **perceptrón** (red neuronal) construido en Next.js | [simulador-perceptron.vercel.app](https://simulador-perceptron.vercel.app) |
 | ⚡ **[hono-prisma-api](https://github.com/MILLERMARRU/hono-prisma-api)** | REST API construida con **Hono** y **Prisma** | [hono-prisma-api.vercel.app](https://hono-prisma-api.vercel.app) |
-| 🍷 **[lic_sam](https://github.com/MILLERMARRU/lic_sam)** ⭐ 2 | E-commerce para licorería con catálogo y checkout | [licoreria-sam-a12.vercel.app](https://licoreria-sam-a12.vercel.app) |
-| 👁️ **[project_ia_face](https://github.com/MILLERMARRU/project_ia_face)** | Pruebas de **reconocimiento facial** en Python | [Ver repo](https://github.com/MILLERMARRU/project_ia_face) |
 
 <br />
 
 ## 📊 Estadísticas de GitHub
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=MILLERMARRU&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MILLERMARRU&layout=compact&theme=tokyonight&hide_border=true" />
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MILLERMARRU&theme=tokyonight" />
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MILLERMARRU&theme=tokyonight" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true" />
 </div>
 
 <br />
