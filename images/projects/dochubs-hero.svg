@@ -1,0 +1,19 @@
+<svg width="760" height="510" viewBox="0 0 760 510" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="roundHero"><rect x="0" y="0" width="760" height="510" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#roundHero)">
+<image href="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/screenshots/dochubs.jpg" x="0" y="0" width="760" height="360" preserveAspectRatio="xMidYMid slice"/>
+<rect x="0" y="360" width="760" height="150" fill="#0d1117"/>
+<circle cx="46" cy="400" r="20" fill="#38BDF833"/>
+<g transform="translate(34,388)" color="#38BDF8">
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"/>
+</g>
+<text x="80" y="408" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#e6edf3">DocHubs</text>
+<text x="80" y="430" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#FACC15">★ Proyecto insignia · Next.js + GitHub como storage</text>
+<text x="30" y="460" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#9ca3af">Plataforma de documentación colaborativa para developers.</text>
+<text x="30" y="480" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#9ca3af">Publicación instantánea en Markdown, sin builds ni redeploys.</text>
+<text x="30" y="502" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#38BDF8">Ver demo →</text>
+</g>
+<rect x="0.5" y="0.5" width="759" height="509" rx="16" fill="none" stroke="#30363d"/>
+</svg>
