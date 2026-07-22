@@ -20,7 +20,7 @@
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/user-round.svg?color=%232DD4BF" /> Sobre mí
 
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/rocket.svg?color=%23FB923C" /> Construyo aplicaciones web full stack con **TypeScript**, **React/Next.js** y **Node.js**
-- <img width="16" valign="middle" src="https://api.iconify.design/lucide/brain.svg?color=%238B5CF6" /> Experimento con **IA/ML**: perceptrón, RNN, CNN, reconocimiento facial y OCR — 13 repos en **Python** (8 scripts + 5 notebooks)
+- <img width="16" valign="middle" src="https://api.iconify.design/lucide/brain.svg?color=%238B5CF6" /> Experimento con **IA/ML**: perceptrón, RNN, CNN, reconocimiento facial y OCR - 13 repos en **Python** (8 scripts + 5 notebooks)
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/coffee.svg?color=%23D97706" /> Desarrollo proyectos con **Java + Spring** y arquitecturas de microservicios
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/cloud.svg?color=%2338BDF8" /> Despliego y opero mis proyectos en **Vercel**, con foco en producto real (no solo demos)
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/book-open.svg?color=%2334D399" /> Siempre creando repos de práctica para seguir mejorando
@@ -46,64 +46,18 @@
 
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/rocket.svg?color=%23FB923C" /> Proyectos destacados
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<h3><img width="20" valign="middle" src="https://api.iconify.design/lucide/book-open.svg?color=%2338BDF8" /> DocHubs</h3>
-<img src="https://img.shields.io/github/stars/MILLERMARRU/team_doc?style=flat-square&color=FACC15&label=stars" /><br/>
-<sub>Plataforma de documentación colaborativa para developers, construida con Next.js y GitHub como storage.</sub><br/><br/>
-<a href="https://dochubs.vercel.app"><img src="https://img.shields.io/badge/Ver_demo-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-<a href="https://github.com/MILLERMARRU/team_doc"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
-</td>
-<td width="50%" valign="top">
-<h3><img width="20" valign="middle" src="https://api.iconify.design/lucide/repeat.svg?color=%2334D399" /> TruqueVAM</h3>
-<sub>Plataforma de trueque comunitario para Nueva Cajamarca — permite publicar objetos e intercambiarlos sin dinero.</sub><br/><br/>
-<a href="https://truquivam.vercel.app"><img src="https://img.shields.io/badge/Ver_demo-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-<a href="https://github.com/MILLERMARRU/TruquiVAM-"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><img width="20" valign="middle" src="https://api.iconify.design/lucide/home.svg?color=%23F59E0B" /> Dream Houses</h3>
-<sub>Sitio para una constructora de casas sostenibles: portafolio de proyectos, fotografía arquitectónica y planos.</sub><br/><br/>
-<a href="https://house3d-umber.vercel.app"><img src="https://img.shields.io/badge/Ver_demo-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-<a href="https://github.com/MILLERMARRU/house3d"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
-</td>
-<td width="50%" valign="top">
-<h3><img width="20" valign="middle" src="https://api.iconify.design/lucide/sparkles.svg?color=%23F472B6" /> Alenor</h3>
-<sub>E-commerce de jabones artesanales naturales, con catálogo y envíos a nivel nacional.</sub><br/><br/>
-<a href="https://alenor-store.vercel.app"><img src="https://img.shields.io/badge/Ver_demo-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-<a href="https://github.com/MILLERMARRU/alenor.store"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><img width="20" valign="middle" src="https://api.iconify.design/lucide/gamepad-2.svg?color=%23A78BFA" /> Buzz Lightyear 3D</h3>
-<sub>Experiencia interactiva en 3D — exploración e interacción visual con el personaje en el navegador.</sub><br/><br/>
-<a href="https://buzz-buzz-two.vercel.app"><img src="https://img.shields.io/badge/Ver_demo-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-<a href="https://github.com/MILLERMARRU/buzz-buzz"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
-</td>
-<td width="50%" valign="top">
-<h3><img width="20" valign="middle" src="https://api.iconify.design/lucide/brain.svg?color=%238B5CF6" /> Simulador Perceptrón</h3>
-<sub>Simulador interactivo de un perceptrón (red neuronal) construido en Next.js.</sub><br/><br/>
-<a href="https://simulador-perceptron.vercel.app"><img src="https://img.shields.io/badge/Ver_demo-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-<a href="https://github.com/MILLERMARRU/simulador-perceptron"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><img width="20" valign="middle" src="https://api.iconify.design/lucide/zap.svg?color=%23FACC15" /> Hono Prisma API</h3>
-<sub>REST API construida con Hono y Prisma.</sub><br/><br/>
-<a href="https://hono-prisma-api.vercel.app"><img src="https://img.shields.io/badge/Ver_demo-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-<a href="https://github.com/MILLERMARRU/hono-prisma-api"><img src="https://img.shields.io/badge/C%C3%B3digo-181717?style=flat-square&logo=github&logoColor=white" /></a>
-</td>
-<td width="50%" valign="top">
-<h3><img width="20" valign="middle" src="https://api.iconify.design/lucide/folder-git-2.svg?color=%2394A3B8" /> ¿Quieres ver más?</h3>
-<sub>Tengo 117 repositorios propios entre proyectos de clientes, práctica e IA/ML.</sub><br/><br/>
-<a href="https://github.com/MILLERMARRU?tab=repositories"><img src="https://img.shields.io/badge/Ver_todos_los_repos-38BDF8?style=flat-square&logo=github&logoColor=white" /></a>
-</td>
-</tr>
-</table>
+<div align="center">
+
+<a href="https://dochubs.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dochubs.svg" /></a>
+<a href="https://truquivam.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/truquevam.svg" /></a>
+<a href="https://house3d-umber.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dreamhouses.svg" /></a>
+<a href="https://alenor-store.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/alenor.svg" /></a>
+<a href="https://buzz-buzz-two.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/buzzbuzz.svg" /></a>
+<a href="https://simulador-perceptron.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/perceptron.svg" /></a>
+<a href="https://hono-prisma-api.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/honoprisma.svg" /></a>
+<a href="https://github.com/MILLERMARRU?tab=repositories"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/vermas.svg" /></a>
+
+</div>
 
 <br />
 
@@ -115,13 +69,16 @@
 
 <sub align="center">
 
-Las cards de abajo solo muestran actividad **pública** — la mayoría de mi trabajo (proyectos de clientes) vive en repos privados.
+Los badges de abajo solo reflejan actividad **pública** - la mayoría de mi trabajo (proyectos de clientes) vive en repos privados.
 
 </sub>
 
 <div align="center">
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MILLERMARRU&theme=tokyonight" />
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MILLERMARRU&theme=tokyonight" />
+  <img src="https://img.shields.io/badge/TypeScript-41_repos-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-17_repos-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Java-16_repos-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-13_repos-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-7_repos-1572B6?style=flat-square&logo=css3&logoColor=white" />
 </div>
 
 <div align="center">
