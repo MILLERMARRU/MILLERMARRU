@@ -63,26 +63,17 @@
 
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23FB7185" /> Estadísticas de GitHub
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Commits_totales-4.4k%2B%20(68%25%20privados)-38BDF8?style=for-the-badge" />
-</div>
-
-<sub align="center">
-
-Los badges de abajo solo reflejan actividad **pública** - la mayoría de mi trabajo (proyectos de clientes) vive en repos privados.
-
-</sub>
+<sub>68% de mis commits son en repos privados (proyectos de clientes) - las cards de abajo solo cuentan lo público.</sub>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/TypeScript-41_repos-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-17_repos-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Java-16_repos-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-13_repos-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS-7_repos-1572B6?style=flat-square&logo=css3&logoColor=white" />
-</div>
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true" />
+<img width="94%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/resumen.svg" />
+
+<br/><br/>
+
+<img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/toplangs.svg" />
+<img width="47%" src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true&card_width=380" />
+
 </div>
 
 <br />
