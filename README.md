@@ -1,22 +1,32 @@
-<h1 align="center">👋 Hola, soy MILLERMARRU</h1>
-<h3 align="center">Full Stack & IA · Perú</h3>
+<div align="center">
 
-<p align="center">
-  💻 Desarrollo web · 🧠 Inteligencia Artificial · ☁️ APIs & Microservicios
-</p>
+# 👋 Hola, soy Miller Zamora — <code>MILLERMARRU</code>
 
----
+### Full Stack Developer & IA · Perú 🇵🇪
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=Full+Stack+%7C+TypeScript+%2F+React+%2F+Next.js;IA+%2F+ML%3A+CNN%2C+RNN%2C+Reconocimiento+facial%2C+OCR;Java+%2B+Spring+%7C+Microservicios+%26+APIs;Siempre+construyendo+algo+nuevo+%F0%9F%9A%80" alt="Typing SVG" />
+</a>
+
+<a href="https://www.linkedin.com/in/millerzamora/"><img src="https://img.shields.io/badge/LinkedIn-millerzamora-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:millermarru4@gmail.com"><img src="https://img.shields.io/badge/Email-millermarru4%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://millermarru.dev"><img src="https://img.shields.io/badge/Portfolio-millermarru.dev-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+
+</div>
+
+<br />
 
 ## 👨‍💻 Sobre mí
 
-- 🚀 Construyo aplicaciones web con **TypeScript**, **React/Next.js** y **Node.js**
+- 🚀 Construyo aplicaciones web full stack con **TypeScript**, **React/Next.js** y **Node.js**
 - 🧠 Experimento con **IA/ML**: perceptrón, RNN, CNN, reconocimiento facial y OCR
-- ☕ Desarrollo proyectos con **Java + Spring** y microservicios
+- ☕ Desarrollo proyectos con **Java + Spring** y arquitecturas de microservicios
+- ☁️ Despliego y opero mis proyectos en **Vercel**, con foco en producto real (no solo demos)
 - 📚 Siempre creando repos de práctica para seguir mejorando
 
----
+<br />
 
-## 🧩 Tecnologías conocidas 👨🏻‍💻
+## 🧩 Tecnologías conocidas
 
 <!-- Tech stack icons -->
 <p align="left">
@@ -31,17 +41,40 @@
   </a>
 </p>
 
----
+<br />
 
 ## 🚀 Proyectos destacados
 
-🔹 [projectia](https://github.com/MILLERMARRU/projectia) – Base para apps en **Next.js + TypeScript**
-🔹 [simulador-perceptron](https://github.com/MILLERMARRU/simulador-perceptron) – Simulador de **perceptrón** en Next.js
-🔹 [project_ia_face](https://github.com/MILLERMARRU/project_ia_face) – Pruebas de **reconocimiento facial** en Python
-🔹 [paddle_ocr](https://github.com/MILLERMARRU/paddle_ocr) – Experimentos de **OCR** con PaddleOCR
+| Proyecto | Descripción | Demo |
+|---|---|---|
+| 📚 **[DocHubs](https://github.com/MILLERMARRU/team_doc)** ⭐ 16 | Plataforma de documentación colaborativa para developers, construida con Next.js y GitHub como storage | [dochubs.vercel.app](https://dochubs.vercel.app) |
+| 📅 **[CitaPe](https://github.com/MILLERMARRU/CitaPe)** | SaaS de agenda digital con recordatorios automáticos por WhatsApp para negocios de servicios | [cita-pe.vercel.app](https://cita-pe.vercel.app) |
+| 🧠 **[simulador-perceptron](https://github.com/MILLERMARRU/simulador-perceptron)** | Simulador interactivo de un **perceptrón** (red neuronal) construido en Next.js | [simulador-perceptron.vercel.app](https://simulador-perceptron.vercel.app) |
+| ⚡ **[hono-prisma-api](https://github.com/MILLERMARRU/hono-prisma-api)** | REST API construida con **Hono** y **Prisma** | [hono-prisma-api.vercel.app](https://hono-prisma-api.vercel.app) |
+| 🍷 **[lic_sam](https://github.com/MILLERMARRU/lic_sam)** ⭐ 2 | E-commerce para licorería con catálogo y checkout | [licoreria-sam-a12.vercel.app](https://licoreria-sam-a12.vercel.app) |
+| 👁️ **[project_ia_face](https://github.com/MILLERMARRU/project_ia_face)** | Pruebas de **reconocimiento facial** en Python | [Ver repo](https://github.com/MILLERMARRU/project_ia_face) |
 
----
+<br />
 
-<p align="center">
-  ✉️ ¿Colaboramos? Abre un issue, haz un fork o mándame un PR 😄
-</p>
+## 📊 Estadísticas de GitHub
+
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=MILLERMARRU&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MILLERMARRU&layout=compact&theme=tokyonight&hide_border=true" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true" />
+</div>
+
+<br />
+
+<div align="center">
+
+### ✉️ ¿Colaboramos?
+
+Abre un issue, haz un fork o mándame un PR 😄
+
+<img src="https://komarev.com/ghpvc/?username=MILLERMARRU&color=38BDF8&style=flat-square&label=Visitas+al+perfil" />
+
+</div>
