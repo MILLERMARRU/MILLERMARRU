@@ -72,8 +72,9 @@
 
 <br/><br/>
 
-<img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/toplangs.svg" />
-<img width="47%" src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true&card_width=380" />
+<img width="360" height="185" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/toplangs.svg" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="360" height="185" src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true&card_width=380" />
 
 </div>
 
