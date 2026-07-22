@@ -1,24 +1,33 @@
-name: GitHub Stats
+name: Update README stats
 
 on:
   schedule:
-    - cron: '0 3 * * *'   # diario a las 03:00 UTC
-  workflow_dispatch:       # lanzarlo a mano desde Actions
+    - cron: '0 6 * * 1'   # todos los lunes a las 06:00 UTC
+  workflow_dispatch:        # lanzarlo a mano desde la pestaña Actions
 
 permissions:
-  contents: write          # permitir que el workflow haga commit del SVG
+  contents: write
 
 jobs:
-  stats:
+  update-stats:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate the user stats image
-        uses: cicirello/user-statistician@v1
+      - uses: actions/setup-node@v4
         with:
-          colors: dark-dimmed
-          custom-title: "GitHub stats de MILLERMARRU"
+          node-version: 20
+
+      - name: Regenerar SVG de estadísticas
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: node scripts/generate-stats.mjs
+
+      - name: Commitear si hubo cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images/projects/resumen.svg images/projects/toplangs.svg
+          git diff --cached --quiet || git commit -m "chore: actualizar estadísticas del README"
+          git push
