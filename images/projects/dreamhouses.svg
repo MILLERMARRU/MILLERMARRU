@@ -1,19 +1,13 @@
-<svg width="380" height="300" viewBox="0 0 380 300" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<clipPath id="round2"><rect x="0" y="0" width="380" height="300" rx="14"/></clipPath>
-</defs>
-<g clip-path="url(#round2)">
-<image href="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/screenshots/dreamhouses.jpg" x="0" y="0" width="380" height="170" preserveAspectRatio="xMidYMid slice"/>
-<rect x="0" y="170" width="380" height="130" fill="#0d1117"/>
-<circle cx="34" cy="206" r="16" fill="#F59E0B33"/>
-<g transform="translate(22,194)" color="#F59E0B">
+<svg width="380" height="136" viewBox="0 0 380 136" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="379" height="135" rx="14" fill="#0d1117" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="136" rx="3" fill="#F59E0B"/>
+<circle cx="34" cy="34" r="16" fill="#F59E0B33"/>
+<g transform="translate(22,22)" color="#F59E0B">
 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
 </g>
-<text x="60" y="213" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6edf3">Dream Houses</text>
-<text x="24" y="241" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">Sitio para una constructora de casas</text>
-<text x="24" y="259" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">sostenibles: portafolio y fotografía.</text>
-<text x="24" y="289" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F59E0B">Ver demo →</text>
-</g>
-<rect x="0.5" y="0.5" width="379" height="299" rx="14" fill="none" stroke="#30363d"/>
+<text x="60" y="41" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6edf3">Dream Houses</text>
+<text x="24" y="70" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">Sitio para una constructora de casas</text>
+<text x="24" y="88" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">sostenibles: portafolio y fotografía.</text>
+<text x="24" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#F59E0B">Ver demo →</text>
 </svg>
