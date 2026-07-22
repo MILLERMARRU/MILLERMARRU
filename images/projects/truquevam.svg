@@ -1,0 +1,14 @@
+<svg width="380" height="136" viewBox="0 0 380 136" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="379" height="135" rx="14" fill="#0d1117" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="136" rx="3" fill="#34D399"/>
+<circle cx="34" cy="34" r="16" fill="#34D39933"/>
+<g transform="translate(22,22)" color="#34D399">
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 2l4 4l-4 4"/>
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4l4-4"/>
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13v1a4 4 0 0 1-4 4H3"/>
+</g>
+<text x="60" y="41" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6edf3">TruqueVAM</text>
+<text x="24" y="70" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">Trueque comunitario en Nueva Cajamarca -</text>
+<text x="24" y="88" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#9ca3af">publica objetos e intercámbialos sin dinero.</text>
+<text x="24" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#34D399">Ver demo →</text>
+</svg>
