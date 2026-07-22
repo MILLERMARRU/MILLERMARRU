@@ -5,7 +5,7 @@
 <line x1="570" y1="26" x2="570" y2="84" stroke="#30363d" stroke-width="1"/>
 <text x="95" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#38BDF8">117</text>
 <text x="95" y="78" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.3">Repos</text>
-<text x="285" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#34D399">4.4k+</text>
+<text x="285" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#34D399">4.2k+</text>
 <text x="285" y="78" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.3">Commits</text>
 <text x="475" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#F59E0B">7</text>
 <text x="475" y="78" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.3">En producción</text>
