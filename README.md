@@ -58,11 +58,15 @@
 
 <br />
 
-## <img width="22" valign="middle" src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23FB7185" /> Actividad
+## <img width="22" valign="middle" src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23FB7185" /> Estadísticas de GitHub
+
+<div align="center">
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MILLERMARRU&theme=tokyonight" />
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MILLERMARRU&theme=tokyonight" />
+</div>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true" />
-  <img src="https://img.shields.io/github/followers/MILLERMARRU?style=for-the-badge&label=Followers&color=38BDF8" />
 </div>
 
 <br />
