@@ -45,22 +45,6 @@
 
 <br />
 
-## <img width="22" valign="middle" src="https://api.iconify.design/lucide/rocket.svg?color=%23FB923C" /> Proyectos destacados
-
-<div align="center">
-
-<a href="https://dochubs.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dochubs.svg" /></a>
-<a href="https://truquivam.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/truquevam.svg" /></a>
-<a href="https://house3d-umber.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/dreamhouses.svg" /></a>
-<a href="https://alenor-store.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/alenor.svg" /></a>
-<a href="https://buzz-buzz-two.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/buzzbuzz.svg" /></a>
-<a href="https://simulador-perceptron.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/perceptron.svg" /></a>
-<a href="https://hono-prisma-api.vercel.app"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/honoprisma.svg" /></a>
-<a href="https://github.com/MILLERMARRU?tab=repositories"><img width="47%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/vermas.svg" /></a>
-
-</div>
-
-<br />
 
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23FB7185" /> Estadísticas de GitHub
 
