@@ -26,7 +26,6 @@
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/cloud.svg?color=%2338BDF8" /> Despliego y opero mis proyectos en **Vercel**, con foco en producto real.
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/book-open.svg?color=%2334D399" /> Siempre creando repos de práctica para seguir mejorando.
 
-<br />
 
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/puzzle.svg?color=%23A78BFA" /> Tecnologías conocidas
 
