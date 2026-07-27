@@ -19,7 +19,7 @@
 
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/user-round.svg?color=%232DD4BF" /> Sobre mí
 
-- <img width="16" valign="middle" src="https://api.iconify.design/lucide/telescope.svg?color=%2338BDF8" /> Actualmente construyendo **DocHubs**, una plataforma de documentación colaborativa para developers.
+- <img width="16" valign="middle" src="https://api.iconify.design/lucide/telescope.svg?color=%2338BDF8" /> Actualmente construyendo **DocHubs**, una plataforma de documentación colaborativa para developers
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/rocket.svg?color=%23FB923C" /> Construyo aplicaciones web full stack con **TypeScript**, **React/Next.js** y **Node.js**.
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/brain.svg?color=%238B5CF6" /> Experimento con **IA/ML**: perceptrón, RNN, CNN, reconocimiento facial y OCR.
 - <img width="16" valign="middle" src="https://api.iconify.design/lucide/coffee.svg?color=%23D97706" /> Desarrollo proyectos con **Java + Spring** y arquitecturas de microservicios.
