@@ -51,12 +51,9 @@
 
 <div align="center">
 
-<img width="94%" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/resumen.svg" />
 
 <br/><br/>
 
-<img width="360" height="185" src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/images/projects/toplangs.svg" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img width="360" height="185" src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true&card_width=380" />
 
 </div>
