@@ -52,8 +52,6 @@
 <div align="center">
 
 
-<br/><br/>
-
 <img width="360" height="185" src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true&card_width=380" />
 
 </div>
@@ -67,8 +65,6 @@
 Trabajo como freelance en desarrollo full stack e IA aplicada - escríbeme y conversemos.
 
 <a href="mailto:millermarru4@gmail.com"><img src="https://img.shields.io/badge/Escribeme-millermarru4%40gmail.com-34D399?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-
-<br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=MILLERMARRU&color=38BDF8&style=flat-square&label=Visitas+al+perfil" />
 
