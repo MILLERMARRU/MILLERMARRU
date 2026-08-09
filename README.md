@@ -8,7 +8,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=FFFFFF&center=true&vCenter=true&width=680&lines=De+simuladores+de+redes+neuronales+a+SaaS+en+producci%C3%B3n;TypeScript+%2F+React+%2F+Next.js+%2F+Node.js;IA+%2F+ML%3A+CNN%2C+RNN%2C+Reconocimiento+facial%2C+OCR;Java+%2B+Spring+%7C+Microservicios+%26+APIs" alt="Typing SVG" />
 </a>
 
-<img src="https://img.shields.io/badge/Disponible-Freelance-34D399?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Disponible-Freelance-3b0764?style=for-the-badge" />
 <a href="https://www.linkedin.com/in/millerzamora/"><img src="https://img.shields.io/badge/LinkedIn-millerzamora-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:millermarru4@gmail.com"><img src="https://img.shields.io/badge/Email-millermarru4%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://millermarru.dev"><img src="https://img.shields.io/badge/Portfolio-millermarru.dev-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
