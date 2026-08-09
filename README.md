@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:354e69,100:000000&height=180&section=header&text=Miller%20Zamora&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Full%20Stack%20%2B%20IA%20aplicada%20%C2%B7%20Freelance&descAlignY=62&descSize=18&fontAlignY=35" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:e8dff5,20:8a2be2,50:1e005a,100:05020a&height=180&section=header&text=Miller%20Zamora&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Full%20Stack%20%2B%20IA%20aplicada%20%C2%B7%20Freelance&descAlignY=62&descSize=18&fontAlignY=35" />
 
 <code>MILLERMARRU</code> · Perú
 
