@@ -64,7 +64,7 @@
 
 Trabajo como freelance en desarrollo full stack e IA aplicada - escríbeme y conversemos.
 
-<a href="mailto:millermarru4@gmail.com"><img src="https://img.shields.io/badge/Escribeme-millermarru4%40gmail.com-34D399?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:millermarru4@gmail.com"><img src="https://img.shields.io/badge/Escribeme-millermarru4%40gmail.com-00A300?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 <img src="https://komarev.com/ghpvc/?username=MILLERMARRU&color=38BDF8&style=flat-square&label=Visitas+al+perfil" />
 
