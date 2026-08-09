@@ -1,11 +1,11 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,100:8B5CF6&height=180&section=header&text=Miller%20Zamora&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Full%20Stack%20%2B%20IA%20aplicada%20%C2%B7%20Freelance&descAlignY=62&descSize=18&fontAlignY=35" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:354e69,100:000000&height=180&section=header&text=Miller%20Zamora&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Full%20Stack%20%2B%20IA%20aplicada%20%C2%B7%20Freelance&descAlignY=62&descSize=18&fontAlignY=35" />
 
 <code>MILLERMARRU</code> · Perú
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=680&lines=De+simuladores+de+redes+neuronales+a+SaaS+en+producci%C3%B3n;TypeScript+%2F+React+%2F+Next.js+%2F+Node.js;IA+%2F+ML%3A+CNN%2C+RNN%2C+Reconocimiento+facial%2C+OCR;Java+%2B+Spring+%7C+Microservicios+%26+APIs" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=FFFFFF&center=true&vCenter=true&width=680&lines=De+simuladores+de+redes+neuronales+a+SaaS+en+producci%C3%B3n;TypeScript+%2F+React+%2F+Next.js+%2F+Node.js;IA+%2F+ML%3A+CNN%2C+RNN%2C+Reconocimiento+facial%2C+OCR;Java+%2B+Spring+%7C+Microservicios+%26+APIs" alt="Typing SVG" />
 </a>
 
 <img src="https://img.shields.io/badge/Disponible-Freelance-34D399?style=for-the-badge" />
