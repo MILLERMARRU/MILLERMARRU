@@ -15,7 +15,6 @@
 
 </div>
 
-<br />
 
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/user-round.svg?color=%232DD4BF" /> Sobre mí
 
@@ -42,7 +41,6 @@
   </a>
 </p>
 
-<br />
 
 
 ## <img width="22" valign="middle" src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23FB7185" /> Estadísticas de GitHub
@@ -55,8 +53,6 @@
 <img width="360" height="185" src="https://streak-stats.demolab.com/?user=MILLERMARRU&theme=tokyonight&hide_border=true&card_width=380" />
 
 </div>
-
-<br />
 
 <div align="center">
 
