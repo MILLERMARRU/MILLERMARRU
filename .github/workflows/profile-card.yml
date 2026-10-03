@@ -56,6 +56,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
         run: python tools/fetch_stats.py
 
+      # main puede moverse mientras se piden las estadísticas (un push o la
+      # corrida anterior). Se alinea con origin/main ANTES de construir y solo
+      # se conservan las estadísticas recién pedidas: así las tarjetas salen
+      # siempre del arte y los scripts que hay en main, nunca de una copia vieja.
+      - name: Align with main, keeping the fresh stats
+        run: |
+          out="$RUNNER_TEMP/cache"
+          mkdir -p "$out"
+          cp cache/*.json "$out/"
+          git fetch origin main
+          git reset --hard origin/main
+          cp "$out"/*.json cache/
+
       - name: Rebuild the card
         run: python tools/build_card.py
 
@@ -66,20 +79,6 @@ jobs:
       # palette change in build_card.py reaches them too.
       - name: Rebuild the link buttons
         run: python tools/build_links.py
-
-      # main puede moverse mientras se piden las estadísticas (un push o la
-      # corrida anterior de este mismo workflow). Un rebase choca porque ambos
-      # tocan los mismos archivos generados; como son salidas deterministas,
-      # se guardan, se alinea con origin/main y se vuelven a copiar: gana la
-      # más reciente.
-      - name: Align with main without conflicts
-        run: |
-          out="$RUNNER_TEMP/out"
-          mkdir -p "$out"
-          cp -r ./*.svg cache "$out/"
-          git fetch origin main
-          git reset --hard origin/main
-          cp -r "$out"/. .
 
       - name: Commit the regenerated card
         uses: stefanzweifel/git-auto-commit-action@v5
