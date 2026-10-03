@@ -67,12 +67,19 @@ jobs:
       - name: Rebuild the link buttons
         run: python tools/build_links.py
 
-      # This is the only workflow left, but main can still move while it
-      # fetches stats -- a manual push lands mid-run. The card and the board
-      # are deterministic build outputs, so replaying them on top of whatever
-      # landed is always safe.
-      - name: Rebase onto any commits that landed meanwhile
-        run: git pull --rebase --autostash origin main
+      # main puede moverse mientras se piden las estadísticas (un push o la
+      # corrida anterior de este mismo workflow). Un rebase choca porque ambos
+      # tocan los mismos archivos generados; como son salidas deterministas,
+      # se guardan, se alinea con origin/main y se vuelven a copiar: gana la
+      # más reciente.
+      - name: Align with main without conflicts
+        run: |
+          out="$RUNNER_TEMP/out"
+          mkdir -p "$out"
+          cp -r ./*.svg cache "$out/"
+          git fetch origin main
+          git reset --hard origin/main
+          cp -r "$out"/. .
 
       - name: Commit the regenerated card
         uses: stefanzweifel/git-auto-commit-action@v5
