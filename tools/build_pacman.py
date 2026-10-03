@@ -59,17 +59,16 @@ OUTRO = 1.8                # empty calendar and the final total, before the rese
 EAT_AHEAD = 5              # px: a day vanishes as the mouth reaches it
 CHOMP = 0.24               # one open-half-shut-half mouth cycle
 
-# The chasers: three Claudes, each trailing Pac-Man by some days and each with
-# its own trait on top of the walk. Stride lengths differ on purpose -- three
-# identical loops started together would march in perfect lock-step.
+# Los perseguidores: Claude, Codex y Gemini CLI, cada uno a unos días de
+# Pac-Man y con su propio gesto. Los pasos duran distinto a propósito: tres
+# ciclos iguales arrancando juntos marcharían en perfecta sincronía.
 CAST = (
-    # (days behind, trait, seconds per stride)
-    (5, "blink", 0.34),
-    (8, "wave", 0.30),
-    (11, "hop", 0.38),
+    # (días detrás, personaje, segundos por paso)
+    (5, "claude", 0.34),
+    (8, "codex", 0.42),
+    (11, "gemini", 0.60),
 )
 TRAIL = tuple(lag for lag, _, _ in CAST)
-WAVE = 0.28                # one arms-down, arms-up cycle
 BLINK_EVERY = 2.4          # eyes shut for a beat once per this many seconds
 
 MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
@@ -200,6 +199,74 @@ CLAWD_PX = (1.5, 1.5)
 # makes them Claude. On white that coral is 3.1:1, barely over the 3:1 floor
 # for graphics, so the light theme takes the darker terracotta at 4.2:1.
 CLAUDE_CORAL = {"dark": "#D97757", "light": "#C15F3C"}
+
+# Codex: la nube de OpenAI con el prompt de terminal recortado. El guion bajo
+# es el cursor: una capa aparte lo tapa y lo destapa para que parpadee.
+CODEX_BODY = """
+...##########...
+.##############.
+################
+##.#############
+###.############
+####.###########
+###.####.....###
+##.#############
+.##############.
+...##########...
+"""
+CODEX_CURSOR = """
+................
+................
+................
+................
+................
+................
+........#####...
+................
+................
+................
+"""
+# Blanco y negro, como la marca de OpenAI.
+CODEX_INK = {"dark": "#f0f6fc", "light": "#1f2328"}
+
+# Gemini: la estrella de cuatro puntas; titila alternando con una más chica.
+GEMINI_BIG = """
+.......#.......
+.......#.......
+......###......
+......###......
+.....#####.....
+....#######....
+..###########..
+###############
+..###########..
+....#######....
+.....#####.....
+......###......
+......###......
+.......#.......
+.......#.......
+"""
+GEMINI_SMALL = """
+...............
+...............
+.......#.......
+.......#.......
+......###......
+.....#####.....
+...#########...
+..###########..
+...#########...
+.....#####.....
+......###......
+.......#.......
+.......#.......
+...............
+...............
+"""
+# El degradado de la marca, de azul a violeta y rosa.
+GEMINI_STOPS = (("0", "#4796E3"), ("0.6", "#9177C7"), ("1", "#CA6673"))
+TWINKLE_EVERY = 1.8
 
 
 def bitmap(art: str) -> list[str]:
@@ -394,24 +461,39 @@ def build(theme: str, cal: dict) -> str:
         return (f'<path d="{layer[a]}">{loop("opacity", ["1", "0"], dur)}</path>'
                 f'<path d="{layer[b]}" opacity="0">{loop("opacity", ["0", "1"], dur)}</path>')
 
-    for lag, trait, stride in CAST:
+    def bob(body: str, stride: float, px: float) -> str:
+        """Sube un píxel cada medio paso, como si avanzara flotando."""
+        return (f'<g><animateTransform attributeName="transform" type="translate" '
+                f'values="0,0;0,{-px:g}" keyTimes="0;0.5" dur="{stride}s" '
+                f'calcMode="discrete" repeatCount="indefinite"/>{body}</g>')
+
+    for lag, who, stride in CAST:
         keys, _ = tl.motion(lag)
-        parts = [f'<path d="{layer["body"]}"/>', flip("legs_a", "legs_b", stride)]
-        parts.append(flip("arms_down", "arms_up", WAVE) if trait == "wave"
-                     else f'<path d="{layer["arms_down"]}"/>')
-        if trait == "blink":
-            parts.append(
+        if who == "claude":
+            body = "".join([
+                f'<path d="{layer["body"]}"/>', flip("legs_a", "legs_b", stride),
+                f'<path d="{layer["arms_down"]}"/>',
                 f'<path d="{layer["lids"]}" opacity="0"><animate attributeName="opacity" '
                 f'values="0;1;0" keyTimes="0;0.93;0.98" dur="{BLINK_EVERY}s" '
-                f'calcMode="discrete" repeatCount="indefinite"/></path>'
-            )
-        body = "".join(parts)
-        if trait == "hop":
-            # one pixel row up on every other half-stride, in step with the legs
-            body = (f'<g><animateTransform attributeName="transform" type="translate" '
-                    f'values="0,0;0,{-CLAWD_PX[1]:g}" keyTimes="0;0.5" dur="{stride}s" '
-                    f'calcMode="discrete" repeatCount="indefinite"/>{body}</g>')
-        sprites.append(f'<g>{anim_translate(tl, keys)}<g fill="{CLAUDE_CORAL[theme]}">{body}</g></g>')
+                f'calcMode="discrete" repeatCount="indefinite"/></path>',
+            ])
+            sprite = f'<g fill="{CLAUDE_CORAL[theme]}">{body}</g>'
+        elif who == "codex":
+            body = (f'<path d="{sprite_path(bitmap(CODEX_BODY), *CLAWD_PX)}"/>'
+                    f'<path d="{sprite_path(bitmap(CODEX_CURSOR), *CLAWD_PX)}">'
+                    f'{loop("opacity", ["0", "1"], 1.06)}</path>')
+            sprite = f'<g fill="{CODEX_INK[theme]}">{bob(body, stride, CLAWD_PX[1])}</g>'
+        else:
+            big = sprite_path(bitmap(GEMINI_BIG), *CLAWD_PX)
+            small = sprite_path(bitmap(GEMINI_SMALL), *CLAWD_PX)
+            body = (f'<path d="{big}"><animate attributeName="opacity" values="1;0;1" '
+                    f'keyTimes="0;0.8;0.9" dur="{TWINKLE_EVERY}s" calcMode="discrete" '
+                    f'repeatCount="indefinite"/></path>'
+                    f'<path d="{small}" opacity="0"><animate attributeName="opacity" values="0;1;0" '
+                    f'keyTimes="0;0.8;0.9" dur="{TWINKLE_EVERY}s" calcMode="discrete" '
+                    f'repeatCount="indefinite"/></path>')
+            sprite = f'<g fill="url(#gem)">{bob(body, stride, CLAWD_PX[1])}</g>'
+        sprites.append(f'<g>{anim_translate(tl, keys)}{sprite}</g>')
 
     keys, heads = tl.motion(0)
     rot = (f'<animateTransform attributeName="transform" type="rotate" '
@@ -482,7 +564,8 @@ def build(theme: str, cal: dict) -> str:
 text, tspan {{white-space: pre;}}
 .px {{shape-rendering: crispEdges;}}
 </style>
-<defs><rect id="d" width="{CELL}" height="{CELL}" rx="{RADIUS}"/></defs>
+<defs><rect id="d" width="{CELL}" height="{CELL}" rx="{RADIUS}"/>
+<linearGradient id="gem" x1="0" y1="0" x2="1" y2="1">{"".join(f'<stop offset="{o}" stop-color="{col}"/>' for o, col in GEMINI_STOPS)}</linearGradient></defs>
 <rect width="{CANVAS_W}px" height="{height:g}px" fill="{c['bg']}" rx="15"/>
 <text y="{header_y:g}" font-size="{HEADER_FONT}px" fill="{c['fg']}">{"".join(number)}</text>
 <text x="{words_x:g}" y="{header_y:g}" font-size="{HEADER_FONT}px" fill="{c['fg']}"> contributions in the last year</text>
