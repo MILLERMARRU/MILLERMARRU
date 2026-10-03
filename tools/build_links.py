@@ -127,10 +127,13 @@ def envelope() -> str:
     return f'<g>{rattle}<path d="{path(ENVELOPE)}"/></g>'
 
 
+# El azul oficial de LinkedIn, igual en los dos temas.
+LINKEDIN_BLUE = "#0A66C2"
+
 # (file name, label, accent, icon)
 LINKS = (
     ("portfolio", "PORTFOLIO", "key", monitor),
-    ("linkedin", "LINKEDIN", "value", linkedin),
+    ("linkedin", "LINKEDIN", "linkedin", linkedin),
     ("email", "EMAIL", "coral", envelope),
 )
 
@@ -144,7 +147,8 @@ def stepped(x: float, y: float, w: float, h: float) -> str:
 def build(theme: str, slot: int) -> str:
     c = THEMES[theme]
     _, label, accent_key, icon = LINKS[slot]
-    accent = CLAUDE_CORAL[theme] if accent_key == "coral" else c[accent_key]
+    accent = (CLAUDE_CORAL[theme] if accent_key == "coral"
+              else LINKEDIN_BLUE if accent_key == "linkedin" else c[accent_key])
 
     x = slot * GAP / 3
     icon_w = 10 * PX
