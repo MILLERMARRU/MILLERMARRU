@@ -13,35 +13,5 @@
   "reviews": 101,
   "discussions": 303,
   "answers": 39,
-  "achievements": [
-    {
-      "name": "Pair Extraordinaire",
-      "tier": 4
-    },
-    {
-      "name": "Galaxy Brain",
-      "tier": 4
-    },
-    {
-      "name": "Starstruck",
-      "tier": 1
-    },
-    {
-      "name": "Public Sponsor",
-      "tier": 1
-    },
-    {
-      "name": "Pull Shark",
-      "tier": 3
-    },
-    {
-      "name": "Quickdraw",
-      "tier": 1
-    },
-    {
-      "name": "YOLO",
-      "tier": 1
-    }
-  ],
   "updated": "2026-10-03T03:27:49+00:00"
 }
