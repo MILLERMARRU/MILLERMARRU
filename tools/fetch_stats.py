@@ -87,6 +87,23 @@ query($login:String!, $after:String) {
 }
 """
 
+# Repos de organizaciones y donde soy colaborador: no suman a Repos ni a
+# Stars (no son míos), pero sí a Lines of Code, que solo cuenta mis commits.
+SHARED_REPOS_Q = """
+query($login:String!, $after:String) {
+  user(login:$login) {
+    repositories(ownerAffiliations:[COLLABORATOR, ORGANIZATION_MEMBER], isFork:false,
+                 first:100, after:$after) {
+      pageInfo { hasNextPage endCursor }
+      nodes {
+        nameWithOwner
+        defaultBranchRef { target { ... on Commit { oid } } }
+      }
+    }
+  }
+}
+"""
+
 # The same last-year calendar GitHub draws on the profile. Anything the
 # profile hides from visitors -- private contributions, unless the owner opts
 # in -- this token cannot see either, so the board always matches the graph
@@ -169,6 +186,18 @@ def fetch_repos() -> tuple[dict, list[dict]]:
         if not page["hasNextPage"]:
             return meta, repos
         after = page["endCursor"]
+
+
+def fetch_shared_repos() -> list[dict]:
+    """Repos ajenos con acceso de colaborador o de miembro de la organización."""
+    repos: list[dict] = []
+    after = None
+    while True:
+        conn = query(SHARED_REPOS_Q, {"login": LOGIN, "after": after})["user"]["repositories"]
+        repos.extend(conn["nodes"])
+        if not conn["pageInfo"]["hasNextPage"]:
+            return repos
+        after = conn["pageInfo"]["endCursor"]
 
 
 def fetch_commit_total(created_at: str) -> int:
@@ -276,7 +305,9 @@ def main() -> None:
     stars = sum(r["stargazerCount"] for r in repos)
     contrib = query(CONTRIB_Q, {"login": LOGIN})["user"]["repositoriesContributedTo"]["totalCount"]
     commits = fetch_commit_total(meta["createdAt"])
-    added, deleted = fetch_loc(repos, meta["id"])
+    shared = fetch_shared_repos()
+    print(f"  shared repos: {len(shared)}")
+    added, deleted = fetch_loc(repos + shared, meta["id"])
 
     stats = {
         "repos": meta["repos"],
