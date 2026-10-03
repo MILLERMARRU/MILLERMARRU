@@ -67,14 +67,12 @@ THEMES = {
         "bg": "#161b22", "fg": "#c9d1d9", "art": "#c9d1d9",
         "key": "#c084fc", "value": "#a5d6ff",
         "add": "#3fb950", "del": "#f85149", "dots": "#616e7f",
-        "gold": "#e3b341", "silver": "#b1bac4", "bronze": "#d18b47",
     },
     "light": {
         "art_src": ASCII_SRC_LIGHT,
         "bg": "#ffffff", "fg": "#24292f", "art": "#24292f",
         "key": "#7e22ce", "value": "#0550ae",
         "add": "#1a7f37", "del": "#cf222e", "dots": "#8c959f",
-        "gold": "#9a6700", "silver": "#57606a", "bronze": "#953800",
     },
 }
 
@@ -220,23 +218,6 @@ def load_stats() -> dict:
     return {k: f"{raw[k]:,}" if isinstance(raw.get(k), int) else blank[k] for k in blank}
 
 
-def load_achievements() -> list[dict]:
-    if not STATS_SRC.exists():
-        return []
-    return json.loads(STATS_SRC.read_text(encoding="utf-8")).get("achievements", [])
-
-
-# El color de cada nivel, como las etiquetas de GitHub.
-TIER_CLASS = {2: "bronze", 3: "silver", 4: "gold"}
-
-
-def achievement_cells(row: Row, a: dict) -> Row:
-    tier = a["tier"]
-    return (row.key(a["name"]).text(":")
-            .text(" ", cls="cc").fill().text(" ", cls="cc")
-            .text(f"x{tier}", cls=TIER_CLASS.get(tier, "value")))
-
-
 def load_art(src: Path) -> list[str]:
     lines = src.read_text(encoding="utf-8").split("\n")
     filled = [i for i, line in enumerate(lines) if line.strip()]
@@ -325,16 +306,6 @@ def build_panel(x: int, y0: float) -> tuple[list[str], int]:
         .text("--", cls="delColor").text(" )")
     )
 
-    achievements = load_achievements()
-    if achievements:
-        rows.append(None)
-        rows.append(rule_row("- Achievements"))
-        for i in range(0, len(achievements), 2):
-            row = achievement_cells(Row().text(". ", cls="cc"), achievements[i])
-            if i + 1 < len(achievements):
-                achievement_cells(row.text(" | "), achievements[i + 1])
-            rows.append(row)
-
     out = []
     for i, row in enumerate(rows):
         y = y0 + i * PANEL_LINE
@@ -402,9 +373,6 @@ def build(theme: str) -> str:
 .addColor {{fill: {c['add']};}}
 .delColor {{fill: {c['del']};}}
 .cc {{fill: {c['dots']};}}
-.gold {{fill: {c['gold']}; font-weight: bold;}}
-.silver {{fill: {c['silver']}; font-weight: bold;}}
-.bronze {{fill: {c['bronze']}; font-weight: bold;}}
 text, tspan {{white-space: pre;}}
 </style>
 <rect width="{width}px" height="{height}px" fill="{c['bg']}" rx="15"/>

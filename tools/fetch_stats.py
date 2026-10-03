@@ -21,7 +21,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 import os
 import sys
 import time
@@ -388,38 +387,6 @@ def fetch_loc(repos: list[dict], author_id: str) -> tuple[int, int]:
     return added, deleted
 
 
-def fetch_achievements(previous: list | None) -> list[dict]:
-    """Logros del perfil con su nivel (x2, x3, x4).
-
-    GitHub no los expone en la API, así que se leen de la pestaña pública de
-    logros. Si la página cambia o falla, se conservan los de la última vez en
-    vez de dejar la tarjeta sin ellos.
-    """
-    try:
-        resp = session.get(f"https://github.com/{LOGIN}?tab=achievements",
-                           headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
-        resp.raise_for_status()
-        found: dict[str, int] = {}
-        # La página repite la lista (grilla y detalle): se lee en orden y el
-        # nivel que aparece después de un nombre es de ese logro.
-        current = None
-        for m in re.finditer(r'alt="Achievement: ([^"]+)"|achievement-tier-label[^>]*>x(\d+)', resp.text):
-            if m.group(1):
-                if m.group(1) in found and current is not None:
-                    break
-                current = m.group(1)
-                found.setdefault(current, 1)
-            elif current is not None:
-                found[current] = int(m.group(2))
-                current = None
-        if not found:
-            raise ValueError("no se encontró ningún logro en la página")
-        return [{"name": n, "tier": t} for n, t in found.items()]
-    except Exception as exc:  # la tarjeta no debe caerse por esto
-        print(f"  achievements: {exc}; se conservan los anteriores", file=sys.stderr)
-        return previous or []
-
-
 def fetch_calendar() -> dict:
     """Weeks as seven weekday slots (0 = Sunday), None where a day doesn't exist yet."""
     cal = query(CALENDAR_Q, {"login": LOGIN})["user"]["contributionsCollection"]["contributionCalendar"]
@@ -456,11 +423,6 @@ def main() -> None:
     print(f"  contributed: {contrib}")
     activity = fetch_activity(meta["createdAt"])
 
-    previous = json.loads(STATS_OUT.read_text(encoding="utf-8")) if STATS_OUT.exists() else {}
-    achievements = fetch_achievements(previous.get("achievements"))
-    listed = ", ".join(f"{a['name']} x{a['tier']}" for a in achievements)
-    print(f"  achievements: {listed}")
-
     stats = {
         "repos": meta["repos"],
         "contrib": contrib,
@@ -471,7 +433,6 @@ def main() -> None:
         "added": added,
         "deleted": deleted,
         **activity,
-        "achievements": achievements,
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
 
