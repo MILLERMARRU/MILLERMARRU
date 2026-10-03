@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import os
 import sys
 import time
@@ -126,13 +127,64 @@ query($login:String!) {
 LEVELS = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2,
           "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
 
-CONTRIB_Q = """
-query($login:String!) {
+# Contributed: repos ajenos donde hubo commits, PRs, issues o revisiones. Se
+# junta lo de cada año desde que existe la cuenta (repositoriesContributedTo
+# solo mira lo reciente) con los repos compartidos donde hay commits míos, que
+# GitHub cuenta como contribución privada y no lista por repositorio.
+CONTRIB_RECENT_Q = """
+query($login:String!, $after:String) {
   user(login:$login) {
     repositoriesContributedTo(
-      first:1,
-      contributionTypes:[COMMIT, PULL_REQUEST, REPOSITORY]
-    ) { totalCount }
+      first:100, after:$after,
+      contributionTypes:[COMMIT, ISSUE, PULL_REQUEST, PULL_REQUEST_REVIEW, REPOSITORY]
+    ) {
+      pageInfo { hasNextPage endCursor }
+      nodes { nameWithOwner }
+    }
+  }
+}
+"""
+
+DISCUSSIONS_Q = """
+query($login:String!, $after:String) {
+  user(login:$login) {
+    repositoryDiscussionComments(first:100, after:$after) {
+      pageInfo { hasNextPage endCursor }
+      nodes { discussion { repository { nameWithOwner } } }
+    }
+  }
+}
+"""
+
+ACTIVITY_Q = """
+query($login:String!) {
+  user(login:$login) {
+    pullRequests { totalCount }
+    merged: pullRequests(states:MERGED) { totalCount }
+    issues { totalCount }
+    repositoryDiscussionComments { totalCount }
+    answers: repositoryDiscussionComments(onlyAnswers:true) { totalCount }
+  }
+}
+"""
+
+REVIEWS_Q = """
+query($login:String!, $from:DateTime!, $to:DateTime!) {
+  user(login:$login) {
+    contributionsCollection(from:$from, to:$to) { totalPullRequestReviewContributions }
+  }
+}
+"""
+
+CONTRIB_YEAR_Q = """
+query($login:String!, $from:DateTime!, $to:DateTime!) {
+  user(login:$login) {
+    contributionsCollection(from:$from, to:$to) {
+      commitContributionsByRepository(maxRepositories:100) { repository { nameWithOwner } }
+      issueContributionsByRepository(maxRepositories:100) { repository { nameWithOwner } }
+      pullRequestContributionsByRepository(maxRepositories:100) { repository { nameWithOwner } }
+      pullRequestReviewContributionsByRepository(maxRepositories:100) { repository { nameWithOwner } }
+    }
   }
 }
 """
@@ -198,6 +250,64 @@ def fetch_shared_repos() -> list[dict]:
         if not conn["pageInfo"]["hasNextPage"]:
             return repos
         after = conn["pageInfo"]["endCursor"]
+
+
+def year_windows(created_at: str):
+    """Ventanas de un año desde la creación de la cuenta hasta hoy."""
+    cursor = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+    now = datetime.now(timezone.utc)
+    while cursor < now:
+        try:
+            nxt = cursor.replace(year=cursor.year + 1)
+        except ValueError:
+            nxt = cursor.replace(year=cursor.year + 1, day=28)  # 29 de febrero
+        end = min(nxt, now)
+        yield (cursor.isoformat().replace("+00:00", "Z"), end.isoformat().replace("+00:00", "Z"))
+        cursor = end
+
+
+def fetch_contributed(created_at: str, shared_with_commits: set[str]) -> int:
+    """Cuántos repos ajenos recibieron alguna contribución mía."""
+    repos = set(shared_with_commits)
+    after = None
+    while True:
+        conn = query(CONTRIB_RECENT_Q, {"login": LOGIN, "after": after})["user"]["repositoriesContributedTo"]
+        repos.update(n["nameWithOwner"] for n in conn["nodes"])
+        if not conn["pageInfo"]["hasNextPage"]:
+            break
+        after = conn["pageInfo"]["endCursor"]
+    for start, end in year_windows(created_at):
+        coll = query(CONTRIB_YEAR_Q, {"login": LOGIN, "from": start, "to": end})["user"]["contributionsCollection"]
+        for group in coll.values():
+            repos.update(item["repository"]["nameWithOwner"] for item in group)
+    # Discusiones: comentarios y respuestas (Galaxy Brain) en repos ajenos.
+    after = None
+    while True:
+        conn = query(DISCUSSIONS_Q, {"login": LOGIN, "after": after})["user"]["repositoryDiscussionComments"]
+        repos.update(n["discussion"]["repository"]["nameWithOwner"]
+                     for n in conn["nodes"] if n.get("discussion"))
+        if not conn["pageInfo"]["hasNextPage"]:
+            break
+        after = conn["pageInfo"]["endCursor"]
+    return len({r for r in repos if not r.lower().startswith(f"{LOGIN.lower()}/")})
+
+
+def fetch_activity(created_at: str) -> dict:
+    """PRs, issues, revisiones de código y discusiones de toda la cuenta."""
+    u = query(ACTIVITY_Q, {"login": LOGIN})["user"]
+    reviews = sum(
+        query(REVIEWS_Q, {"login": LOGIN, "from": start, "to": end})
+        ["user"]["contributionsCollection"]["totalPullRequestReviewContributions"]
+        for start, end in year_windows(created_at)
+    )
+    return {
+        "prs": u["pullRequests"]["totalCount"],
+        "merged": u["merged"]["totalCount"],
+        "issues": u["issues"]["totalCount"],
+        "reviews": reviews,
+        "discussions": u["repositoryDiscussionComments"]["totalCount"],
+        "answers": u["answers"]["totalCount"],
+    }
 
 
 def fetch_commit_total(created_at: str) -> int:
@@ -278,6 +388,38 @@ def fetch_loc(repos: list[dict], author_id: str) -> tuple[int, int]:
     return added, deleted
 
 
+def fetch_achievements(previous: list | None) -> list[dict]:
+    """Logros del perfil con su nivel (x2, x3, x4).
+
+    GitHub no los expone en la API, así que se leen de la pestaña pública de
+    logros. Si la página cambia o falla, se conservan los de la última vez en
+    vez de dejar la tarjeta sin ellos.
+    """
+    try:
+        resp = session.get(f"https://github.com/{LOGIN}?tab=achievements",
+                           headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+        resp.raise_for_status()
+        found: dict[str, int] = {}
+        # La página repite la lista (grilla y detalle): se lee en orden y el
+        # nivel que aparece después de un nombre es de ese logro.
+        current = None
+        for m in re.finditer(r'alt="Achievement: ([^"]+)"|achievement-tier-label[^>]*>x(\d+)', resp.text):
+            if m.group(1):
+                if m.group(1) in found and current is not None:
+                    break
+                current = m.group(1)
+                found.setdefault(current, 1)
+            elif current is not None:
+                found[current] = int(m.group(2))
+                current = None
+        if not found:
+            raise ValueError("no se encontró ningún logro en la página")
+        return [{"name": n, "tier": t} for n, t in found.items()]
+    except Exception as exc:  # la tarjeta no debe caerse por esto
+        print(f"  achievements: {exc}; se conservan los anteriores", file=sys.stderr)
+        return previous or []
+
+
 def fetch_calendar() -> dict:
     """Weeks as seven weekday slots (0 = Sunday), None where a day doesn't exist yet."""
     cal = query(CALENDAR_Q, {"login": LOGIN})["user"]["contributionsCollection"]["contributionCalendar"]
@@ -303,11 +445,21 @@ def main() -> None:
     print(f"  repos: {meta['repos']} | followers: {meta['followers']}")
 
     stars = sum(r["stargazerCount"] for r in repos)
-    contrib = query(CONTRIB_Q, {"login": LOGIN})["user"]["repositoriesContributedTo"]["totalCount"]
     commits = fetch_commit_total(meta["createdAt"])
     shared = fetch_shared_repos()
     print(f"  shared repos: {len(shared)}")
     added, deleted = fetch_loc(repos + shared, meta["id"])
+    cache = json.loads(LOC_CACHE.read_text(encoding="utf-8"))
+    with_commits = {r["nameWithOwner"] for r in shared
+                    if (cache.get(cache_key(r["nameWithOwner"])) or {}).get("added")}
+    contrib = fetch_contributed(meta["createdAt"], with_commits)
+    print(f"  contributed: {contrib}")
+    activity = fetch_activity(meta["createdAt"])
+
+    previous = json.loads(STATS_OUT.read_text(encoding="utf-8")) if STATS_OUT.exists() else {}
+    achievements = fetch_achievements(previous.get("achievements"))
+    listed = ", ".join(f"{a['name']} x{a['tier']}" for a in achievements)
+    print(f"  achievements: {listed}")
 
     stats = {
         "repos": meta["repos"],
@@ -318,6 +470,8 @@ def main() -> None:
         "loc": added - deleted,
         "added": added,
         "deleted": deleted,
+        **activity,
+        "achievements": achievements,
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
 
