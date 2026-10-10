@@ -1,7 +1,7 @@
 <a href="https://millermarru.dev/">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/dark_mode.svg">
-    <img alt="Miller Zamora Noriega - Full Stack Developer + IA aplicada. TypeScript, Python, Java, PHP. React, Next.js, Angular, Spring Boot, NestJS, Express, Laravel, PostgreSQL, Docker. Perú." src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/light_mode.svg">
+    <img alt="Miller Zamora- Full Stack Developer + IA aplicada. TypeScript, Python, Java, PHP. React, Next.js, Angular, Spring Boot, NestJS, Express, Laravel, PostgreSQL, Docker. Perú." src="https://raw.githubusercontent.com/MILLERMARRU/MILLERMARRU/main/light_mode.svg">
   </picture>
 </a>
 
