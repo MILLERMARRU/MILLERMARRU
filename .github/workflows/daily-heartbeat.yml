@@ -1,0 +1,53 @@
+# Red de seguridad para el cuadrito verde diario.
+#
+# profile-card.yml no siempre deja commit: falla si STATS_TOKEN vence o la API
+# de GitHub da error, no commitea si nada cambio, y GitHub puede atrasar o
+# saltarse un cron. Este workflow revisa por la tarde si main ya tiene un
+# commit de hoy (UTC) y, si no, escribe la fecha en cache/heartbeat.txt y la
+# commitea a nombre de la cuenta para que cuente en el grafico.
+#
+# Usa el GITHUB_TOKEN del propio workflow, no STATS_TOKEN: aunque ese token
+# venza, el cuadrito se sigue pintando.
+name: Daily Heartbeat
+
+on:
+  schedule:
+    # Dos intentos por si GitHub se salta uno: el segundo no hace nada si el
+    # primero ya commiteo. Ambos antes de las 00:00 UTC aunque GitHub los
+    # atrase un par de horas, para que el commit no caiga al dia siguiente.
+    - cron: "0 18 * * *"
+    - cron: "0 21 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Mismo grupo que profile-card.yml: nunca empujan a main al mismo tiempo.
+concurrency:
+  group: profile-card
+  cancel-in-progress: false
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Commit only if main has nothing from today
+        run: |
+          today=$(date -u +%F)
+          last=$(TZ=UTC git log -1 --format=%ad --date=format-local:%F)
+          if [ "$last" = "$today" ]; then
+            echo "main ya tiene un commit de hoy ($today), nada que hacer"
+            exit 0
+          fi
+
+          echo "$today" > cache/heartbeat.txt
+          git config user.name "MILLERMARRU"
+          git config user.email "121509607+MILLERMARRU@users.noreply.github.com"
+          git add cache/heartbeat.txt
+          git commit -m "chore: daily heartbeat $today"
+          git push origin HEAD:main
